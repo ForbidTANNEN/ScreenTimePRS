@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		5044519921D5D7F700CE10B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044519821D5D7F700CE10B5 /* AppDelegate.swift */; };
-		5044519B21D5D7F700CE10B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044519A21D5D7F700CE10B5 /* ViewController.swift */; };
+		5044519B21D5D7F700CE10B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044519A21D5D7F700CE10B5 /* LoginViewController.swift */; };
 		5044519E21D5D7F700CE10B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5044519C21D5D7F700CE10B5 /* Main.storyboard */; };
 		504451A021D5D7F700CE10B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5044519F21D5D7F700CE10B5 /* Assets.xcassets */; };
 		504451A321D5D7F700CE10B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504451A121D5D7F700CE10B5 /* LaunchScreen.storyboard */; };
+		504451AB21D857A800CE10B5 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504451AA21D857A800CE10B5 /* ParentViewController.swift */; };
+		504451AD21D8594A00CE10B5 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504451AC21D8594A00CE10B5 /* ChildViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5044519521D5D7F700CE10B5 /* ScreenTimePrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimePrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5044519821D5D7F700CE10B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5044519A21D5D7F700CE10B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5044519A21D5D7F700CE10B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5044519D21D5D7F700CE10B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5044519F21D5D7F700CE10B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		504451A221D5D7F700CE10B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		504451A421D5D7F700CE10B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		504451AA21D857A800CE10B5 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
+		504451AC21D8594A00CE10B5 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				5044519821D5D7F700CE10B5 /* AppDelegate.swift */,
-				5044519A21D5D7F700CE10B5 /* ViewController.swift */,
+				5044519A21D5D7F700CE10B5 /* LoginViewController.swift */,
 				5044519C21D5D7F700CE10B5 /* Main.storyboard */,
 				5044519F21D5D7F700CE10B5 /* Assets.xcassets */,
 				504451A121D5D7F700CE10B5 /* LaunchScreen.storyboard */,
 				504451A421D5D7F700CE10B5 /* Info.plist */,
+				504451AA21D857A800CE10B5 /* ParentViewController.swift */,
+				504451AC21D8594A00CE10B5 /* ChildViewController.swift */,
 			);
 			path = ScreenTimePrs;
 			sourceTree = "<group>";
@@ -136,8 +142,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5044519B21D5D7F700CE10B5 /* ViewController.swift in Sources */,
+				5044519B21D5D7F700CE10B5 /* LoginViewController.swift in Sources */,
 				5044519921D5D7F700CE10B5 /* AppDelegate.swift in Sources */,
+				504451AB21D857A800CE10B5 /* ParentViewController.swift in Sources */,
+				504451AD21D8594A00CE10B5 /* ChildViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

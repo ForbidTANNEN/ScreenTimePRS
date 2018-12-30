@@ -9,10 +9,17 @@
 import UIKit
 
 class LoginViewController: UIViewController {
-
+    
+    @IBOutlet fileprivate var usernameField: UITextField!
+    @IBOutlet fileprivate var passwordField: UITextField!
+    
+ 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        self.usernameField.text = "Tannen"
+        self.passwordField.text = "Dad"
+        
     }
 
     override func didReceiveMemoryWarning() {

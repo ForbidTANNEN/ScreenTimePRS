@@ -37,6 +37,13 @@ class LoginViewController: UIViewController {
         self.present(childViewController, animated: true, completion: nil)
     }
     
+    func createAlert (title:String, message:String){
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        alert.addAction(UIAlertController(title: "OK", style: UIAlertActionStyle.default))
+    }
+    
+    
  
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -49,6 +49,7 @@
                     <connections>
                         <outlet property="passwordField" destination="nrt-KL-JzH" id="aUz-rA-NWk"/>
                         <outlet property="usernameField" destination="UpL-62-NqS" id="4CU-Vg-A7F"/>
+                        <segue destination="GY3-Vx-4f8" kind="presentation" identifier="toParent" id="vSz-1C-IVC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZ5-Pe-N01" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -58,7 +59,7 @@
         <!--Parent View Controller-->
         <scene sceneID="Q7K-M6-SB2">
             <objects>
-                <viewController storyboardIdentifier="ParentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GY3-Vx-4f8" customClass="ParentViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ParentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GY3-Vx-4f8" customClass="ParentViewController" customModule="ScreenTimePrs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQo-ff-1I6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,10 +71,14 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCu-N2-G9J">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="logoutButton" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GCu-N2-G9J" userLabel="logoutButton">
                                 <rect key="frame" x="16" y="20" width="54" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <accessibility key="accessibilityConfiguration" identifier="logoutButton" label="logoutButton"/>
                                 <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="GY3-Vx-4f8" eventType="touchUpInside" id="ZS3-gh-6kj"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -87,7 +92,7 @@
         <!--Child View Controller-->
         <scene sceneID="DZL-LR-xT1">
             <objects>
-                <viewController storyboardIdentifier="ChildViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fZz-En-hyn" customClass="ChildViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ChildViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fZz-En-hyn" customClass="ChildViewController" customModule="ScreenTimePrs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YWa-Hm-Cv4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

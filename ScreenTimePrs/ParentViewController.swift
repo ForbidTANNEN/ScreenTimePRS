@@ -10,9 +10,21 @@ import UIKit
 
 class ParentViewController: UIViewController {
     
+    
+    @IBAction func logout(_ sender: UIButton){
+        print("Logout")
+        loadLoginScreen()
+    }
+    
+    func loadLoginScreen(){
+        self.dismiss(animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        print("Hi")
+        
     }
     
     override func didReceiveMemoryWarning() {

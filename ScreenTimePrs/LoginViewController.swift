@@ -38,15 +38,15 @@ class LoginViewController: UIViewController {
     }
     
     func loadParentScreen(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+/*        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let parentViewController = storyBoard.instantiateViewController(withIdentifier: "ParentViewController") as! UIViewController
         self.present(parentViewController, animated: true, completion: nil)
-    }
+ */
+        self.performSegue(withIdentifier: "toParent", sender: self)
+ }
     
     func loadChildScreen(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let childViewController = storyBoard.instantiateViewController(withIdentifier: "ChildViewController") as! UIViewController
-        self.present(childViewController, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "toChild", sender: self)
     }
     
     func createAlert (title:String, message:String){

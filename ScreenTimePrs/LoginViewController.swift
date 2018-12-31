@@ -38,10 +38,6 @@ class LoginViewController: UIViewController {
     }
     
     func loadParentScreen(){
-/*        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let parentViewController = storyBoard.instantiateViewController(withIdentifier: "ParentViewController") as! UIViewController
-        self.present(parentViewController, animated: true, completion: nil)
- */
         self.performSegue(withIdentifier: "toParent", sender: self)
  }
     

@@ -12,11 +12,6 @@ class ParentViewController: UIViewController {
     
     
     @IBAction func logout(_ sender: UIButton){
-        print("Logout")
-        loadLoginScreen()
-    }
-    
-    func loadLoginScreen(){
         self.dismiss(animated: true, completion: nil)
     }
     

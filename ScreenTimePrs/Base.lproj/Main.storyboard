@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R9P-xF-Ram">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,15 @@
             <objects>
                 <viewController storyboardIdentifier="LoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="R9P-xF-Ram" customClass="LoginViewController" customModule="ScreenTimePrs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Bz-Wm-ddv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BalanceBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="Dax-20-x4d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" restorationIdentifier="usernameField" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UpL-62-NqS" userLabel="usernameField">
-                                <rect key="frame" x="139" y="163" width="97" height="30"/>
+                                <rect key="frame" x="131" y="301" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="usernameField"/>
                                 <nil key="textColor"/>
@@ -27,15 +31,19 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myd-ER-1vD">
-                                <rect key="frame" x="159" y="341" width="56" height="30"/>
+                                <rect key="frame" x="179" y="487" width="56" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="signIn:" destination="R9P-xF-Ram" eventType="touchDown" id="TNq-cg-btV"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BalanceLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="hLz-I3-p4V">
+                                <rect key="frame" x="122" y="61" width="170" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nrt-KL-JzH" userLabel="passwordField">
-                                <rect key="frame" x="139" y="251" width="97" height="30"/>
+                                <rect key="frame" x="131" y="413" width="152" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="passwordField" label="passwordField"/>
                                 <nil key="textColor"/>
@@ -55,14 +63,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZ5-Pe-N01" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="484" y="33.733133433283363"/>
+            <point key="canvasLocation" x="482.60869565217394" y="33.423913043478265"/>
         </scene>
         <!--Parent View Controller-->
         <scene sceneID="Q7K-M6-SB2">
             <objects>
                 <viewController storyboardIdentifier="ParentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="GY3-Vx-4f8" customClass="ParentViewController" customModule="ScreenTimePrs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQo-ff-1I6">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Parent View" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m1e-VK-REZ">
@@ -88,14 +96,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="za7-aN-xeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1276" y="164"/>
+            <point key="canvasLocation" x="1254" y="34"/>
         </scene>
         <!--Child View Controller-->
         <scene sceneID="DZL-LR-xT1">
             <objects>
                 <viewController storyboardIdentifier="ChildViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fZz-En-hyn" customClass="ChildViewController" customModule="ScreenTimePrs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YWa-Hm-Cv4">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Child View" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AY0-EF-1uP">
@@ -120,7 +128,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EzI-IN-xad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1992.8" y="33.733133433283363"/>
+            <point key="canvasLocation" x="1994" y="34"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="BalanceBG.png" width="4500" height="8000"/>
+        <image name="BalanceLogo.png" width="4274" height="1455"/>
+    </resources>
 </document>

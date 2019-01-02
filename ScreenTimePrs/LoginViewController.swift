@@ -23,9 +23,11 @@ class LoginViewController: UIViewController {
     @IBAction func signIn(_ sender: UIButton){
         print("SignIn")
         if(self.usernameField.text == parentName && self.passwordField.text == parentPass){
+            Session.instance.username = self.usernameField.text!
             loadParentScreen()
         }
         else if(self.usernameField.text == childName && self.passwordField.text == childPass){
+            Session.instance.username = self.usernameField.text!
             loadChildScreen()
         }
         

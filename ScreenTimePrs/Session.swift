@@ -10,5 +10,7 @@ public class Session {
     
     public static let instance = Session()
     
+    public var username = ""
+    
 }
 

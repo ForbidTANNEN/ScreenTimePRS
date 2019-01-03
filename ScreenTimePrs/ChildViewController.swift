@@ -10,6 +10,8 @@ import UIKit
 
 class ChildViewController: UIViewController {
     
+    @IBOutlet fileprivate var welcomeText: UITextField!
+    
     @IBAction func logout(_ sender: UIButton){
         self.dismiss(animated: true, completion: nil)
     }
@@ -18,6 +20,7 @@ class ChildViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("Child View Loaded")
+        self.welcomeText.text = "Hello, " + Session.instance.username
     }
     
     override func didReceiveMemoryWarning() {

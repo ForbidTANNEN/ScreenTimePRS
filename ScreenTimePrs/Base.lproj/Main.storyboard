@@ -74,7 +74,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Parent View" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m1e-VK-REZ">
-                                <rect key="frame" x="139" y="80" width="97" height="30"/>
+                                <rect key="frame" x="159" y="140" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -89,14 +89,24 @@
                                     <action selector="logout:" destination="GY3-Vx-4f8" eventType="touchUpInside" id="ZS3-gh-6kj"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello, " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lae-9h-hRK">
+                                <rect key="frame" x="110" y="61" width="194" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="PnL-Kc-ht8"/>
                     </view>
+                    <connections>
+                        <outlet property="welcomeText" destination="lae-9h-hRK" id="Nvn-Yb-cfa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="za7-aN-xeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1254" y="34"/>
+            <point key="canvasLocation" x="1253.6231884057972" y="33.423913043478265"/>
         </scene>
         <!--Child View Controller-->
         <scene sceneID="DZL-LR-xT1">
@@ -107,7 +117,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Child View" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AY0-EF-1uP">
-                                <rect key="frame" x="139" y="121" width="97" height="30"/>
+                                <rect key="frame" x="159" y="124" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -121,14 +131,24 @@
                                     <action selector="logout:" destination="fZz-En-hyn" eventType="touchUpInside" id="SUu-z3-bIm"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hello" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hny-kX-bUk">
+                                <rect key="frame" x="127" y="62" width="160" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="VR8-e6-muU"/>
                     </view>
+                    <connections>
+                        <outlet property="welcomeText" destination="Hny-kX-bUk" id="Oox-H1-FPJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EzI-IN-xad" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1994" y="34"/>
+            <point key="canvasLocation" x="1992.753623188406" y="33.423913043478265"/>
         </scene>
     </scenes>
     <resources>

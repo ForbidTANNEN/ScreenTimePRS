@@ -10,6 +10,7 @@ import UIKit
 
 class ParentViewController: UIViewController {
     
+    @IBOutlet fileprivate var welcomeText: UITextField!
     
     @IBAction func logout(_ sender: UIButton){
         self.dismiss(animated: true, completion: nil)
@@ -20,6 +21,7 @@ class ParentViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         print("Parent View Loaded")
         print(Session.instance.username)
+        self.welcomeText.text = "Hello, " + Session.instance.username
         
     }
     

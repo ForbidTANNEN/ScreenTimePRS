@@ -9,19 +9,15 @@
 import UIKit
 
 class CellController: UITableViewCell {
+    
+    var trueadd = true
+    
     @IBOutlet fileprivate var chore: UILabel!
     
     @IBAction func approve(_ sender: UIButton){
 
         self.chore.text = Session.instance.choreText
-        
-        
-    }
     
-    @IBAction func addbutton(_ sender: UIButton){
-        
-        self.chore.text = Session.instance.choreText
-        
-    }
 }
 
+}

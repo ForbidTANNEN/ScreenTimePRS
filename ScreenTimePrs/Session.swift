@@ -16,8 +16,6 @@ public class Session {
     
     public var choreText = ""
     
-    public var addButtonOn = false
-    
     
 }
 

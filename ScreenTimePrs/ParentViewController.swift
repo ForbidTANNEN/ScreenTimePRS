@@ -11,6 +11,11 @@ import UIKit
 class ParentViewController: UIViewController {
     
     @IBOutlet fileprivate var welcomeText: UITextField!
+    @IBOutlet fileprivate var addChore: UITextField!
+    
+    @IBAction func addButton(_ sender: UIButton){
+        Session.instance.choreText = self.addChore.text!
+    }
     
     @IBAction func logout(_ sender: UIButton){
         self.dismiss(animated: true, completion: nil)

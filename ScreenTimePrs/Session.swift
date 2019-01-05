@@ -8,9 +8,16 @@
 
 public class Session {
     
+    
+    
     public static let instance = Session()
     
     public var username = ""
+    
+    public var choreText = ""
+    
+    public var addButtonOn = false
+    
     
 }
 

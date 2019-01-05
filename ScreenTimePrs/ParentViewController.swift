@@ -12,20 +12,16 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet fileprivate var welcomeText: UITextField!
     @IBOutlet fileprivate var addChore: UITextField!
-
-    var taskName = ["Sweep the floors", "Wash the Windows", "Feed the dog"]
-    
-    var screenTime = ["30min", "80min", "20min", "40min"]
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return(taskName.count)
+        return(Session.instance.taskName.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
-        cell.task.text = taskName[indexPath.row]
-        cell.amountOfScreenTime.text = screenTime[indexPath.row]
+        cell.task.text = Session.instance.taskName[indexPath.row]
+        cell.amountOfScreenTime.text = Session.instance.screenTime[indexPath.row]
         return(cell)
         
     }
@@ -33,8 +29,8 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBAction func addButton(_ sender: UIButton){
         Session.instance.choreText = self.addChore.text!
-        taskName.append("Take out the trash")
-        screenTime.append("15min")
+        Session.instance.taskName.append("Take out the trash")
+        Session.instance.screenTime.append("15min")
         self.loadView();
     }
     

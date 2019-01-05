@@ -22,11 +22,11 @@ class LoginViewController: UIViewController {
     
     @IBAction func signIn(_ sender: UIButton){
         print("SignIn")
-        if(self.usernameField.text == parentName && self.passwordField.text == parentPass){
+        if(self.usernameField.text?.lowercased() == parentName.lowercased() && self.passwordField.text?.lowercased() == parentPass.lowercased()){
             Session.instance.username = self.usernameField.text!
             loadParentScreen()
         }
-        else if(self.usernameField.text == childName && self.passwordField.text == childPass){
+        else if(self.usernameField.text?.lowercased() == childName.lowercased() && self.passwordField.text?.lowercased() == childPass.lowercased()){
             Session.instance.username = self.usernameField.text!
             loadChildScreen()
         }

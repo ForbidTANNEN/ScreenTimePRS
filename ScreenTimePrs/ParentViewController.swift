@@ -8,10 +8,27 @@
 
 import UIKit
 
-class ParentViewController: UIViewController {
+class ParentViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     @IBOutlet fileprivate var welcomeText: UITextField!
     @IBOutlet fileprivate var addChore: UITextField!
+    
+    var taskName = ["Sweep the floors", "Wash the Windows", "Feed the dog"]
+    
+    var screenTime = ["30min", "80min", "20min"]
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return(taskName.count)
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
+        cell.task.text = taskName[indexPath.row]
+        return(cell)
+        
+    }
+    
     
     @IBAction func addButton(_ sender: UIButton){
         Session.instance.choreText = self.addChore.text!

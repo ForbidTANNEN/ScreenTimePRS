@@ -23,11 +23,11 @@ class LoginViewController: UIViewController {
     @IBAction func signIn(_ sender: UIButton){
         print("SignIn")
         if(self.usernameField.text?.lowercased() == parentName.lowercased() && self.passwordField.text?.lowercased() == parentPass.lowercased()){
-            Session.instance.username = self.usernameField.text!
+            Session.instance.username = self.usernameField.text!.capitalized
             loadParentScreen()
         }
         else if(self.usernameField.text?.lowercased() == childName.lowercased() && self.passwordField.text?.lowercased() == childPass.lowercased()){
-            Session.instance.username = self.usernameField.text!
+            Session.instance.username = self.usernameField.text!.capitalized
             loadChildScreen()
         }
         

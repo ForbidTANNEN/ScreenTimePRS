@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5035008E21DD6E5A00BB5300 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5035008D21DD6E5A00BB5300 /* Session.swift */; };
+		503500AE21E0651300BB5300 /* WhiteBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 503500AD21E0651300BB5300 /* WhiteBG.png */; };
 		5044519921D5D7F700CE10B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044519821D5D7F700CE10B5 /* AppDelegate.swift */; };
 		5044519B21D5D7F700CE10B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044519A21D5D7F700CE10B5 /* LoginViewController.swift */; };
 		5044519E21D5D7F700CE10B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5044519C21D5D7F700CE10B5 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		5035008D21DD6E5A00BB5300 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		503500AD21E0651300BB5300 /* WhiteBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WhiteBG.png; path = ../../WhiteBG.png; sourceTree = "<group>"; };
 		5044519521D5D7F700CE10B5 /* ScreenTimePrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimePrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5044519821D5D7F700CE10B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5044519A21D5D7F700CE10B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 				504451B821DB07AF00CE10B5 /* BalanceLogo.png */,
 				504451B621DAFB6B00CE10B5 /* FinishedLogo.png */,
 				505CD7C021DB0C730011AAD8 /* BalanceBG.png */,
+				503500AD21E0651300BB5300 /* WhiteBG.png */,
 				5044519721D5D7F700CE10B5 /* ScreenTimePrs */,
 				5044519621D5D7F700CE10B5 /* Products */,
 			);
@@ -145,6 +148,7 @@
 				505CD7C121DB0C740011AAD8 /* BalanceBG.png in Resources */,
 				504451A321D5D7F700CE10B5 /* LaunchScreen.storyboard in Resources */,
 				504451B921DB07AF00CE10B5 /* BalanceLogo.png in Resources */,
+				503500AE21E0651300BB5300 /* WhiteBG.png in Resources */,
 				504451A021D5D7F700CE10B5 /* Assets.xcassets in Resources */,
 				5044519E21D5D7F700CE10B5 /* Main.storyboard in Resources */,
 			);

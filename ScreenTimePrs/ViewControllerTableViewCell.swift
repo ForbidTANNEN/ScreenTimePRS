@@ -10,6 +10,7 @@ import UIKit
 
 class ViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var task: UILabel!
+    @IBOutlet weak var amountOfScreenTime: UILabel!
     
     
 

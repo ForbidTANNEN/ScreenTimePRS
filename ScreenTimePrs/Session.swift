@@ -18,7 +18,7 @@ public class Session {
     
     public var taskName = ["Sweep the floors", "Wash the Windows", "Feed the dog"]
     
-    public var screenTime = ["30min", "80min", "20min", "40min"]
+    public var screenTime = ["30min", "80min", "20min"]
     
     
 }

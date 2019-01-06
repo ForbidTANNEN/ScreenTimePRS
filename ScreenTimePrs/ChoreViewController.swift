@@ -10,7 +10,18 @@ import UIKit
 
 class ChoreViewController: UIViewController {
     
-
+    @IBOutlet fileprivate var taskToComplete: UITextField!
+    @IBOutlet fileprivate var amountTimeRewarded: UITextField!
+    
+    @IBAction func Finished(_ sender: UIButton) {
+        
+        Session.instance.taskName.append(taskToComplete.text!)
+        Session.instance.screenTime.append(amountTimeRewarded.text!)
+        print(Session.instance.taskName)
+        print(Session.instance.screenTime)
+        
+    }
+    
     
     
 }

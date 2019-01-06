@@ -16,9 +16,11 @@ public class Session {
     
     public var choreText = ""
     
-    public var taskName = ["Sweep the floors", "Wash the Windows", "Feed the dog"]
+    public var taskName: [[String]] = [["Sweep the floors", "Wash the Windows", "Feed the dog"], ["Wash the car", "Clean the dog", "lawnmow the grass"]]
     
     public var screenTime = ["30min", "80min", "20min"]
+    
+    
     
     
 }

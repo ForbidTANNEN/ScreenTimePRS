@@ -29,6 +29,7 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         cell.task.text = Session.instance.taskName[indexPath.row]
         cell.amountOfScreenTime.text = Session.instance.screenTime[indexPath.row]
+        print("Row = ", indexPath.row)
         return(cell)
         
     }

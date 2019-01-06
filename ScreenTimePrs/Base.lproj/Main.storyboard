@@ -288,6 +288,7 @@
         <image name="BalanceLogo.png" width="4274" height="1455"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="wBm-fA-VBZ"/>
         <segue reference="Pj2-l1-hdw"/>
     </inferredMetricsTieBreakers>
 </document>

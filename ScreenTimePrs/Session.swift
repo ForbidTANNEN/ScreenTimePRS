@@ -20,7 +20,7 @@ public class Session {
     
     public var screenTime = ["30min", "80min", "20min"]
     
-    
+    public var arrayNum = ""
     
     
 }

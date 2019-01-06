@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		5035008E21DD6E5A00BB5300 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5035008D21DD6E5A00BB5300 /* Session.swift */; };
-		503500AE21E0651300BB5300 /* WhiteBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 503500AD21E0651300BB5300 /* WhiteBG.png */; };
 		5044519921D5D7F700CE10B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044519821D5D7F700CE10B5 /* AppDelegate.swift */; };
 		5044519B21D5D7F700CE10B5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5044519A21D5D7F700CE10B5 /* LoginViewController.swift */; };
 		5044519E21D5D7F700CE10B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5044519C21D5D7F700CE10B5 /* Main.storyboard */; };
@@ -16,15 +15,15 @@
 		504451A321D5D7F700CE10B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504451A121D5D7F700CE10B5 /* LaunchScreen.storyboard */; };
 		504451AB21D857A800CE10B5 /* ParentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504451AA21D857A800CE10B5 /* ParentViewController.swift */; };
 		504451AD21D8594A00CE10B5 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504451AC21D8594A00CE10B5 /* ChildViewController.swift */; };
-		504451B721DAFB6B00CE10B5 /* FinishedLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 504451B621DAFB6B00CE10B5 /* FinishedLogo.png */; };
-		504451B921DB07AF00CE10B5 /* BalanceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 504451B821DB07AF00CE10B5 /* BalanceLogo.png */; };
-		505CD7C121DB0C740011AAD8 /* BalanceBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 505CD7C021DB0C730011AAD8 /* BalanceBG.png */; };
+		50ADE21F21E16B91006972D6 /* ChoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ADE21E21E16B91006972D6 /* ChoreViewController.swift */; };
+		50C76B1D21E181C30001D17B /* BalanceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C76B1C21E181C30001D17B /* BalanceLogo.png */; };
+		50C76B1F21E181D00001D17B /* BalanceBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C76B1E21E181D00001D17B /* BalanceBG.png */; };
+		50C76B2121E182310001D17B /* FinishedLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C76B2021E1822E0001D17B /* FinishedLogo.png */; };
 		50D44DC721E15EB90075411D /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D44DC621E15EB90075411D /* ViewControllerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5035008D21DD6E5A00BB5300 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		503500AD21E0651300BB5300 /* WhiteBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = WhiteBG.png; path = ../../WhiteBG.png; sourceTree = "<group>"; };
 		5044519521D5D7F700CE10B5 /* ScreenTimePrs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenTimePrs.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5044519821D5D7F700CE10B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5044519A21D5D7F700CE10B5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -34,9 +33,10 @@
 		504451A421D5D7F700CE10B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		504451AA21D857A800CE10B5 /* ParentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentViewController.swift; sourceTree = "<group>"; };
 		504451AC21D8594A00CE10B5 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
-		504451B621DAFB6B00CE10B5 /* FinishedLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FinishedLogo.png; path = ../../FinishedLogo.png; sourceTree = "<group>"; };
-		504451B821DB07AF00CE10B5 /* BalanceLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BalanceLogo.png; path = ../../BalanceLogo.png; sourceTree = "<group>"; };
-		505CD7C021DB0C730011AAD8 /* BalanceBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BalanceBG.png; path = ../../BalanceBG.png; sourceTree = "<group>"; };
+		50ADE21E21E16B91006972D6 /* ChoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreViewController.swift; sourceTree = "<group>"; };
+		50C76B1C21E181C30001D17B /* BalanceLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BalanceLogo.png; path = ../../../BalanceLogo.png; sourceTree = "<group>"; };
+		50C76B1E21E181D00001D17B /* BalanceBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BalanceBG.png; path = ../../../BalanceBG.png; sourceTree = "<group>"; };
+		50C76B2021E1822E0001D17B /* FinishedLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FinishedLogo.png; path = ../../../FinishedLogo.png; sourceTree = "<group>"; };
 		50D44DC621E15EB90075411D /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,10 +54,6 @@
 		5044518C21D5D7F700CE10B5 = {
 			isa = PBXGroup;
 			children = (
-				504451B821DB07AF00CE10B5 /* BalanceLogo.png */,
-				504451B621DAFB6B00CE10B5 /* FinishedLogo.png */,
-				505CD7C021DB0C730011AAD8 /* BalanceBG.png */,
-				503500AD21E0651300BB5300 /* WhiteBG.png */,
 				5044519721D5D7F700CE10B5 /* ScreenTimePrs */,
 				5044519621D5D7F700CE10B5 /* Products */,
 			);
@@ -74,11 +70,15 @@
 		5044519721D5D7F700CE10B5 /* ScreenTimePrs */ = {
 			isa = PBXGroup;
 			children = (
+				50C76B2021E1822E0001D17B /* FinishedLogo.png */,
+				50ADE21E21E16B91006972D6 /* ChoreViewController.swift */,
 				5044519821D5D7F700CE10B5 /* AppDelegate.swift */,
 				5044519A21D5D7F700CE10B5 /* LoginViewController.swift */,
 				5035008D21DD6E5A00BB5300 /* Session.swift */,
 				5044519C21D5D7F700CE10B5 /* Main.storyboard */,
 				50D44DC621E15EB90075411D /* ViewControllerTableViewCell.swift */,
+				50C76B1C21E181C30001D17B /* BalanceLogo.png */,
+				50C76B1E21E181D00001D17B /* BalanceBG.png */,
 				5044519F21D5D7F700CE10B5 /* Assets.xcassets */,
 				504451A121D5D7F700CE10B5 /* LaunchScreen.storyboard */,
 				504451A421D5D7F700CE10B5 /* Info.plist */,
@@ -147,12 +147,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				504451B721DAFB6B00CE10B5 /* FinishedLogo.png in Resources */,
-				505CD7C121DB0C740011AAD8 /* BalanceBG.png in Resources */,
+				50C76B1F21E181D00001D17B /* BalanceBG.png in Resources */,
 				504451A321D5D7F700CE10B5 /* LaunchScreen.storyboard in Resources */,
-				504451B921DB07AF00CE10B5 /* BalanceLogo.png in Resources */,
-				503500AE21E0651300BB5300 /* WhiteBG.png in Resources */,
+				50C76B1D21E181C30001D17B /* BalanceLogo.png in Resources */,
 				504451A021D5D7F700CE10B5 /* Assets.xcassets in Resources */,
+				50C76B2121E182310001D17B /* FinishedLogo.png in Resources */,
 				5044519E21D5D7F700CE10B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +169,7 @@
 				504451AB21D857A800CE10B5 /* ParentViewController.swift in Sources */,
 				504451AD21D8594A00CE10B5 /* ChildViewController.swift in Sources */,
 				50D44DC721E15EB90075411D /* ViewControllerTableViewCell.swift in Sources */,
+				50ADE21F21E16B91006972D6 /* ChoreViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

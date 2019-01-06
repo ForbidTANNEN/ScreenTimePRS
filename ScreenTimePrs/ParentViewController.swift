@@ -26,12 +26,16 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    
     @IBAction func addButton(_ sender: UIButton){
-        Session.instance.choreText = self.addChore.text!
-        Session.instance.taskName.append("Take out the trash")
-        Session.instance.screenTime.append("15min")
-        self.loadView();
+        
+         Session.instance.taskName.append("Take out the trash")
+         Session.instance.screenTime.append("15min")
+         self.loadView();
+        print("button pushed")
+        performSegue(withIdentifier: "toChoreViewController", sender: self)
+        
+        
+        
     }
     
     @IBAction func logout(_ sender: UIButton){

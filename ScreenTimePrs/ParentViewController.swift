@@ -34,10 +34,22 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+        
+        if editingStyle == UITableViewCellEditingStyle.delete
+        {
+            Session.instance.taskName.remove(at: indexPath.row)
+            Session.instance.screenTime.remove(at: indexPath.row)
+            tableView.reloadData()
+            print(Session.instance.screenTime)
+            print(Session.instance.taskName)
+        }
+        
+    }
+    
+    
     @IBAction func addButton(_ sender: UIButton){
         
-         Session.instance.taskName.append("Take out the trash")
-         Session.instance.screenTime.append("15min")
          self.loadView();
         print("button pushed")
         performSegue(withIdentifier: "toChoreViewController", sender: self)

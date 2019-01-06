@@ -19,7 +19,12 @@ class ChoreViewController: UIViewController {
         Session.instance.screenTime.append(amountTimeRewarded.text!)
         print(Session.instance.taskName)
         print(Session.instance.screenTime)
-        
+        performSegue(withIdentifier: "toParentFromChore", sender: self)
+    }
+    
+    
+    @IBAction func back(_ sender: UIButton) {
+        performSegue(withIdentifier: "toParentFromChore", sender: self)
     }
     
     

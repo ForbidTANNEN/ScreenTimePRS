@@ -160,6 +160,7 @@
                     </view>
                     <connections>
                         <outlet property="welcomeText" destination="lae-9h-hRK" id="Nvn-Yb-cfa"/>
+                        <segue destination="R9P-xF-Ram" kind="show" identifier="toLogin" id="rFj-1e-ShD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="za7-aN-xeF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -267,6 +268,6 @@
         <image name="BalanceLogo.png" width="4274" height="1455"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="vSz-1C-IVC"/>
+        <segue reference="S9l-K6-dEc"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -39,7 +39,7 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func logout(_ sender: UIButton){
-        self.dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "toLogin", sender: self)
     }
     
     override func viewDidLoad() {

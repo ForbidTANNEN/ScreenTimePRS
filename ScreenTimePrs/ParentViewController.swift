@@ -13,8 +13,15 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet fileprivate var welcomeText: UITextField!
     @IBOutlet fileprivate var addChore: UITextField!
     
+    let myTitles = ["Chores Completed", "Chores Pending"]
+    
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return(Session.instance.taskName.count)
+    }
+    
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return myTitles[section]
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{

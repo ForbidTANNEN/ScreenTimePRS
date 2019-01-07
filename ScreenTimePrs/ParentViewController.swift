@@ -13,7 +13,17 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet fileprivate var welcomeText: UITextField!
     @IBOutlet fileprivate var addChore: UITextField!
     
+    var button = 0
+
+    
+    @IBAction func buttoncell(_ sender: UIButton) {
+        print("Button Pushed")
+        
+        
+    }
     let myTitles = ["Chores Completed", "Chores Pending"]
+    
+    var myIndex = 0
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return(Session.instance.taskName.count)
@@ -24,17 +34,27 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
         return myTitles[section]
     }
     
+    override func didChangeValue(forKey : String) {
+        print("This was called")
+    }
+    
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! ViewControllerTableViewCell
         cell.task.text = Session.instance.taskName[indexPath.row]
         cell.amountOfScreenTime.text = Session.instance.screenTime[indexPath.row]
+        cell.index = indexPath.row
         print("Row = ", indexPath.row)
         return(cell)
         
     }
     
-    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
+     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        myIndex = indexPath.row
+        print("My index = ", myIndex)
+    }
+    
+   /* func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath){
         
         if editingStyle == UITableViewCellEditingStyle.delete
         {
@@ -45,17 +65,12 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
             print(Session.instance.taskName)
         }
         
-    }
-    
+    }*/
     
     @IBAction func addButton(_ sender: UIButton){
-        
          self.loadView();
         print("button pushed")
         performSegue(withIdentifier: "toChoreViewController", sender: self)
-        
-        
-        
     }
     
     @IBAction func logout(_ sender: UIButton){
@@ -68,6 +83,8 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
         print("Parent View Loaded")
         print(Session.instance.username)
         self.welcomeText.text = "Hello, " + Session.instance.username
+        
+        
         
     }
     

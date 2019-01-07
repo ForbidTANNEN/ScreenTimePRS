@@ -12,6 +12,18 @@ class ViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var task: UILabel!
     @IBOutlet weak var amountOfScreenTime: UILabel!
     
+    public var index = 0;
+    
+    @IBAction func deleteButton(_ sender: UIButton) {
+        
+        print("delete index=",index);
+        Session.instance.screenTime.remove(at: index)
+        print(Session.instance.screenTime)
+        
+
+        }
+    
+    
     
 
     override func awakeFromNib() {

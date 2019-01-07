@@ -12,6 +12,7 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     
     @IBOutlet fileprivate var welcomeText: UITextField!
     @IBOutlet fileprivate var addChore: UITextField!
+    @IBOutlet weak var tableViewOutlet: UITableView!
     
     var button = 0
 
@@ -28,7 +29,7 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         return(Session.instance.taskName.count)
     }
-    
+
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return myTitles[section]
@@ -44,6 +45,7 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
         cell.task.text = Session.instance.taskName[indexPath.row]
         cell.amountOfScreenTime.text = Session.instance.screenTime[indexPath.row]
         cell.index = indexPath.row
+        cell.tableViewOutlet = self.tableViewOutlet
         print("Row = ", indexPath.row)
         return(cell)
         
@@ -83,9 +85,7 @@ class ParentViewController: UIViewController, UITableViewDataSource, UITableView
         print("Parent View Loaded")
         print(Session.instance.username)
         self.welcomeText.text = "Hello, " + Session.instance.username
-        
-        
-        
+        tableViewOutlet.reloadData()
     }
     
     override func didReceiveMemoryWarning() {

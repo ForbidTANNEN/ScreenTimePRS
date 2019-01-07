@@ -22,6 +22,7 @@ public class Session {
     
     public var arrayNum = ""
     
+    public var reload = false
     
 }
 

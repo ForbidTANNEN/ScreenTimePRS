@@ -19,6 +19,7 @@
 		50C76B1D21E181C30001D17B /* BalanceLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C76B1C21E181C30001D17B /* BalanceLogo.png */; };
 		50C76B1F21E181D00001D17B /* BalanceBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C76B1E21E181D00001D17B /* BalanceBG.png */; };
 		50C76B2121E182310001D17B /* FinishedLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C76B2021E1822E0001D17B /* FinishedLogo.png */; };
+		50C76B2321E300450001D17B /* DeclineButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 50C76B2221E300450001D17B /* DeclineButton.png */; };
 		50D44DC721E15EB90075411D /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50D44DC621E15EB90075411D /* ViewControllerTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		50C76B1C21E181C30001D17B /* BalanceLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BalanceLogo.png; path = ../../../BalanceLogo.png; sourceTree = "<group>"; };
 		50C76B1E21E181D00001D17B /* BalanceBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = BalanceBG.png; path = ../../../BalanceBG.png; sourceTree = "<group>"; };
 		50C76B2021E1822E0001D17B /* FinishedLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = FinishedLogo.png; path = ../../../FinishedLogo.png; sourceTree = "<group>"; };
+		50C76B2221E300450001D17B /* DeclineButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeclineButton.png; sourceTree = "<group>"; };
 		50D44DC621E15EB90075411D /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,6 +72,7 @@
 		5044519721D5D7F700CE10B5 /* ScreenTimePrs */ = {
 			isa = PBXGroup;
 			children = (
+				50C76B2221E300450001D17B /* DeclineButton.png */,
 				50C76B2021E1822E0001D17B /* FinishedLogo.png */,
 				50ADE21E21E16B91006972D6 /* ChoreViewController.swift */,
 				5044519821D5D7F700CE10B5 /* AppDelegate.swift */,
@@ -151,6 +154,7 @@
 				504451A321D5D7F700CE10B5 /* LaunchScreen.storyboard in Resources */,
 				50C76B1D21E181C30001D17B /* BalanceLogo.png in Resources */,
 				504451A021D5D7F700CE10B5 /* Assets.xcassets in Resources */,
+				50C76B2321E300450001D17B /* DeclineButton.png in Resources */,
 				50C76B2121E182310001D17B /* FinishedLogo.png in Resources */,
 				5044519E21D5D7F700CE10B5 /* Main.storyboard in Resources */,
 			);

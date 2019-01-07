@@ -133,9 +133,13 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o5b-YM-1kJ">
-                                                    <rect key="frame" x="336" y="22" width="46" height="30"/>
+                                                    <rect key="frame" x="338" y="49" width="46" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <state key="normal" title="Button"/>
+                                                    <color key="backgroundColor" red="0.92891609668731689" green="0.21953278779983521" blue="0.19875350594520569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <state key="normal" title="Decline">
+                                                        <color key="titleColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
+                                                    </state>
                                                     <connections>
                                                         <action selector="deleteButton:" destination="IdZ-BA-krQ" eventType="touchUpInside" id="4fb-au-uF9"/>
                                                     </connections>
@@ -167,6 +171,7 @@
                         <viewLayoutGuide key="safeArea" id="PnL-Kc-ht8"/>
                     </view>
                     <connections>
+                        <outlet property="tableViewOutlet" destination="NCo-XB-Fxa" id="izf-U1-6A1"/>
                         <outlet property="welcomeText" destination="lae-9h-hRK" id="Nvn-Yb-cfa"/>
                         <segue destination="R9P-xF-Ram" kind="show" identifier="toLogin" id="rFj-1e-ShD"/>
                     </connections>

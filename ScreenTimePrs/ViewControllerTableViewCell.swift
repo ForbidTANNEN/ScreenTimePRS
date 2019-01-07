@@ -13,14 +13,16 @@ class ViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var amountOfScreenTime: UILabel!
     
     public var index = 0;
+    public var tableViewOutlet: UITableView!
     
     @IBAction func deleteButton(_ sender: UIButton) {
         
         print("delete index=",index);
         Session.instance.screenTime.remove(at: index)
+        Session.instance.taskName.remove(at: index)
+        print(Session.instance.taskName)
         print(Session.instance.screenTime)
-        
-
+        tableViewOutlet.reloadData()
         }
     
     
